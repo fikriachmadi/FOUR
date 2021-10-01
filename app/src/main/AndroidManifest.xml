@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DailyPlanet">
         <activity
+            android:name=".Splash_Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".ConfirmPasswordActivity"
             android:exported="true"
             android:parentActivityName=".Verify_Activity" />
@@ -64,13 +73,7 @@
             android:parentActivityName=".main.MainActivity" />
         <activity
             android:name=".StartActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".main.DetailActivity"
             android:exported="true"

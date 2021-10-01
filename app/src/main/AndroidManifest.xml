@@ -12,21 +12,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DailyPlanet">
         <activity
+            android:name=".splash_screenActivity"
+            android:exported="true" />
+        <activity
             android:name=".ConfirmPasswordActivity"
             android:exported="true"
-            android:parentActivityName=".Verify_Activity"/>
+            android:parentActivityName=".Verify_Activity" />
         <activity
             android:name=".Verify_Activity"
             android:exported="true"
-            android:parentActivityName=".forgot_password_activity"/>
+            android:parentActivityName=".forgot_password_activity" />
         <activity
             android:name=".forgot_password_activity"
             android:exported="true"
-            android:parentActivityName=".LoginActivity"/>
+            android:parentActivityName=".LoginActivity" />
         <activity
             android:name=".sign_up"
             android:exported="true"
-            android:parentActivityName=".LoginActivity"/>
+            android:parentActivityName=".LoginActivity" />
         <activity
             android:name=".Withdrawal"
             android:exported="true" />

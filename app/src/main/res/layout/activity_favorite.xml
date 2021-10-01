@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="11dp"
+    tools:context=".FavoriteActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewFav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+
+            <ImageView
+                android:id="@+id/imgNewsFav1"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/txtTitleFav1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@id/imgNewsFav1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/title"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDescriptionFav1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTitleFav1"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/imgNewsFav1"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="@string/description" />
+
+            <TextView
+                android:id="@+id/txtPublishedAtFav1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtDescriptionFav1"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/imgNewsFav1"
+                android:text="@string/publishedat"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/txtSourceFav1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtDescriptionFav1"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/txtPublishedAtFav1"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="@string/source"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/txtCoinSumFav1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtPublishedAtFav1"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/imgNewsFav1"
+                android:text="@string/_5_coins"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewFav"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+
+            <ImageView
+                android:id="@+id/imgNewsFav2"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/txtTitleFav2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@id/imgNewsFav2"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/title"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDescriptionFav2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTitleFav2"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/imgNewsFav2"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="@string/description" />
+
+            <TextView
+                android:id="@+id/txtPublishedAtFav2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtDescriptionFav2"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/imgNewsFav2"
+                android:text="@string/publishedat"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/txtSourceFav2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtDescriptionFav2"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/txtPublishedAtFav2"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="@string/source"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/txtCoinSumFav2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtPublishedAtFav2"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/imgNewsFav2"
+                android:text="@string/_5_coins"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgDetailNews"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"/>
+
+        <TextView
+            android:id="@+id/txtDetailTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            tools:text="title"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_below="@id/imgDetailNews"/>
+
+        <TextView
+            android:id="@+id/txtDetailPublishedAt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            tools:text="publishedAt"
+            android:layout_below="@id/txtDetailTitle"/>
+
+        <TextView
+            android:id="@+id/txtDetailSource"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDetailTitle"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/txtDetailPublishedAt"
+            tools:text="source" />
+
+        <TextView
+            android:id="@+id/txtDetailAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            tools:text="author"
+            android:textStyle="italic"
+            android:layout_below="@id/txtDetailPublishedAt"/>
+
+        <TextView
+            android:id="@+id/txtDetailCoins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDetailPublishedAt"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@id/txtDetailAuthor"
+            android:textStyle="italic"
+            android:text="@string/_5_coins" />
+
+        <WebView
+            android:id="@+id/txtDetailContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDetailAuthor"
+            android:layout_marginTop="16dp" />
+
+        <ImageView
+            android:id="@+id/imgDetailShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_share_24"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/txtDetailContent"
+            android:layout_alignParentEnd="true"/>
+
+        <ImageView
+            android:id="@+id/imgDetailFavorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_favorite_border_24"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/txtDetailContent"
+            android:layout_toStartOf="@id/imgDetailShare"/>
+
+        <ImageView
+            android:id="@+id/imgDetailReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDetailContent"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toStartOf="@id/imgDetailFavorite"
+            android:src="@drawable/ic_report_24" />
+
+        <TextView
+            android:id="@+id/txtDetailComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/comments"
+            android:layout_below="@id/imgDetailReport"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDetailComment">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtDetailComment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/type_a_comment"
+                android:inputType="text"
+                android:maxLines="1" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/txtDetailRecommendation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recommendation"
+            android:layout_marginTop="32dp"
+            android:layout_below="@id/txtInputLayout"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/txtDetailRecommendation"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="5dp"
+            android:layout_margin="5dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <ImageView
+                    android:id="@+id/imgNewsFav"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/txtTitleFav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_toEndOf="@id/imgNewsFav"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="@string/title" />
+
+                <TextView
+                    android:id="@+id/txtDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtTitleFav"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/imgNewsFav"
+                    android:ellipsize="end"
+                    android:lines="2"
+                    android:text="@string/description" />
+
+                <TextView
+                    android:id="@+id/txtPublishedAt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtDescription"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/imgNewsFav"
+                    android:textSize="12sp"
+                    android:textStyle="italic"
+                    android:text="@string/publishedat" />
+
+                <TextView
+                    android:id="@+id/txtSource"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtDescription"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/txtPublishedAt"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textSize="12sp"
+                    android:textStyle="italic"
+                    android:text="@string/source" />
+
+                <TextView
+                    android:id="@+id/txtCoinSum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtPublishedAt"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/imgNewsFav"
+                    android:textSize="12sp"
+                    android:textStyle="italic"
+                    android:text="@string/_5_coins" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+</ScrollView>

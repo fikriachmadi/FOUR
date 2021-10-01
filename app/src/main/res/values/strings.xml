@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">DailyPlanet</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="coins">Coins</string>
+    <string name="search">Search</string>
+    <string name="comments">Comments</string>
+    <string name="type_a_comment">Type a comment</string>
+    <string name="recommendation">Recommendation</string>
+    <string name="_5_coins">5 coins</string>
+    <string name="publishedat">PublishedAt</string>
+    <string name="source">Source</string>
+    <string name="button_finance">Finance</string>
+    <string name="button_sport">Sport</string>
+    <string name="button_bussines">Bussines</string>
+    <string name="button_technology">Technology</string>
+    <string name="button_art">Art</string>
+    <string name="button_food">Food</string>
+    <string name="button_travel">Travel</string>
+    <string name="button_health">Health</string>
+    <string name="button_entertaint">Entertaint</string>
+    <string name="button_education">Education</string>
+</resources>

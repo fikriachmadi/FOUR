@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoryActivity">
+
+    <Button
+        android:id="@+id/button_Sport"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/form_field"
+        android:text="@string/button_sport"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        android:onClick="main"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/button_Finance"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/form_field"
+        android:text="@string/button_finance"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        android:onClick="main"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/button_Bussines"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/form_field"
+        android:text="@string/button_bussines"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.121"
+        android:onClick="main"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/button_food"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/form_field"
+        android:text="@string/button_food"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.222"
+        android:onClick="main"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/button_travel"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/form_field"
+        android:text="@string/button_travel"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.327"
+        android:onClick="main"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/button_health"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/form_field"
+        android:text="@string/button_health"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.327"
+        android:onClick="main"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/button_entertaint"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/form_field"
+        android:text="@string/button_entertaint"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.426"
+        android:onClick="main"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/button_education"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/form_field"
+        android:text="@string/button_education"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.426"
+        android:onClick="main"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/button_art"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/form_field"
+        android:text="@string/button_art"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.222"
+        android:onClick="main"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/button_technology"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/form_field"
+        android:text="@string/button_technology"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.121"
+        android:onClick="main"
+        tools:ignore="TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
